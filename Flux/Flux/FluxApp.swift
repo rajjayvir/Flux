@@ -15,7 +15,7 @@ struct FluxApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
 //                .environmentObject(healthViewModel)  // Providing the ViewModels to the environment
 //                .environmentObject(workoutViewModel)
         }

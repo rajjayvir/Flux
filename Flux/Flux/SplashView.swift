@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct ContentView: View {
+struct SplashView: View {
     @State private var isActive = false
 
     var body: some View {
@@ -15,7 +15,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             if isActive {
                 // Navigate to the main view after the splash screen
-//                HomeView() // Replace this with your main home view
+                SignUpView()
             } else {
                 // Splash screen content
                 VStack {
@@ -43,6 +43,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SplashView()
     }
 }
